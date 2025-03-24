@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription Client - Élevage des Poules</title>
+    <style>
+        header {
+    background-color: #3a9a5f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 5px 0 0;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #f8b400;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #f8b400;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 0.5rem 0 0.2rem;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #f8b400;
+            color: white;
+            padding: 0.7rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #d99400;
+        }
+
+        .products {
+            display: none;
+            margin-top: 2rem;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1rem;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #444;
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+            background: #f8b400;
+            color: white;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background: #d99400;
+        }
+    </style>
+    <script>
+        function inscrireClient(event) {
+            event.preventDefault(); 
+            const nom = document.getElementById('nom').value;
+            const prenom = document.getElementById('prenom').value;
+            const adresse = document.getElementById('adresse').value;
+            const telephone = document.getElementById('telephone').value;
+
+            if (nom && prenom && adresse && telephone) {
+                // Afficher les produits
+                document.getElementById('formulaire').style.display = 'none';
+                document.querySelector('.products').style.display = 'block';
+            } else {
+                alert('Veuillez remplir tous les champs !');
+            }
+        }
+    </script>
+</head>
+<body>
+    
+<header>
+    <h1>Bienvenue sur notre site d'élevage des poules</h1>
+    <p>Fiers de vous offrir des produits frais et de qualité.</p>
+</header>
+
+    <div class="container">
+        <div id="formulaire">
+            <h2>Inscription Client</h2>
+            <form onsubmit="inscrireClient(event)">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" placeholder="Entrez votre nom" required>
+
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" placeholder="Entrez votre prénom" required>
+
+                <label for="adresse">Adresse</label>
+                <input type="text" id="adresse" placeholder="Entrez votre adresse" required>
+
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" placeholder="Entrez votre téléphone" required>
+
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
+
+        <div class="products">
+            <h2>Nos Produits</h2>
+            <div class="menu">
+                <a href="poules.html">Poules</a>
+                <a href="oeufs.html">Œufs</a>
+                <a href="viande.html">Viande</a>
+                <a href="fumier.html">Fumier</a>
+            </div>
+            
+        </div>
+        <h1><a href="achat des produits.html">Acheter</a></h1>
+    </div>
+    <footer>
+        <p>&copy; 2024 Élevage des Poules. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Nation - Station de Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        header img {
+            height: 80px;
+        }
+        .marquee {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .marquee span {
+            display: inline-block;
+            animation: scroll 10s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .product-display {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .product-display table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .product-display th, .product-display td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        .product-display th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image/logo.jpeg" alt="Black Nation Logo">
+        <h1>Black Nation - Station de Service</h1>
+        <h2>We're Open</h2>
+    </header>
+    <div class="marquee">
+        <span>Petrole: $1.20/L | Essence: $1.30/L | Mazout: $0.95/L</span>
+    </div>
+    <section class="product-display">
+        <h2>Nos Produits</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Produit</th>
+                    <th>Prix (par litre)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pétrole</td>
+                    <td>$1.20</td>
+                </tr>
+                <tr>
+                    <td>Essence</td>
+                    <td>$1.30</td>
+                </tr>
+                <tr>
+                    <td>Mazout</td>
+                    <td>$0.95</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </section>
+    <a href="publicite.html"> Publication</a>
+    <a href="horaire.html"> Horaires</a>
+    <div>
+        <text-align><center>
+    <a href="reservation.html">cliquer ici pour faire la reservation</a></center></text-align>
+    </div>
+</body>
+</html>

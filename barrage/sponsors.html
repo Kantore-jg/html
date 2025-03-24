@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsors - Barrage de Gitega</title>
+    <style>
+        /* Même CSS que dans les pages précédentes */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .intro {
+            padding: 20px;
+            background-color: #ffffff;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        .intro h2 {
+            color: #0077b6;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h3 {
+            color: #0077b6;
+        }
+
+        .form-container form {
+            display: grid;
+            gap: 15px;
+        }
+
+        .form-container input, .form-container select, .form-container button {
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            background-color: #0077b6;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        .form-container button:hover {
+            background-color: #005f8a;
+        }
+
+        .nav {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .nav a {
+            background-color: #0077b6;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .nav a:hover {
+            background-color: #005f8a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- En-tête du site (partagé sur toutes les pages) -->
+    <header>
+        <h1>Projet de Construction du Barrage</h1>
+        <p>Un projet d'envergure pour la gestion de l'eau, l'irrigation, et la production d'énergie propre.</p>
+    </header>
+
+    <!-- Section Sponsors (Formulaire de Contribution) -->
+    <section class="intro">
+        <h2>Devenez Sponsor du Barrage de Gitega</h2>
+        <p>
+            Merci de votre intérêt à soutenir la construction du barrage de Gitega. Votre contribution est essentielle pour réaliser ce projet et
+            améliorer la gestion de l'eau, l'irrigation, et la production d'énergie dans la région. Veuillez remplir le formulaire ci-dessous pour
+            faire un don et soutenir notre initiative.
+        </p>
+    </section>
+
+    <section class="form-container">
+        <h3>Formulaire de Contribution</h3>
+        <form action="remerciement.html" method="POST" id="donation-form">
+            <label for="first-name">Prénom :</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Nom :</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="age">Âge :</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="address">Adresse :</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="phone">Numéro de téléphone :</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="payment-method">Moyen de paiement :</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="credit-card">Carte de crédit</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">Virement bancaire</option>
+            </select>
+
+            <label for="amount">Montant de la contribution (en BIF) :</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="date">Date de contribution :</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Sponsoriser</button>
+        </form>
+    </section>
+
+    <!-- Lien vers d'autres pages ou retour à l'accueil -->
+    <section class="nav">
+        <a href="page d'accueil.html" class="btn">Retour à l'Accueil</a>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Projet de Construction du Barrage | Tous droits réservés</p>
+    </footer>
+</body>
+</html>

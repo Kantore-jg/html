@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Black Nation</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background-color: #222; color: #fff; text-align: center; padding: 20px; }
+        header img { height: 80px; }
+        section { margin: 20px auto; width: 90%; max-width: 600px; background: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding: 20px; border-radius: 10px; }
+        h2 { text-align: center; }
+        form { display: flex; flex-direction: column; }
+        label { margin-bottom: 5px; font-weight: bold; }
+        input { margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+        button { padding: 10px; background-color: #222; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #555; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image/logo.jpeg" alt="Black Nation Logo">
+        <h1>Black Nation - Station de Service</h1>
+        <h2>We're Open</h2>
+    </header>
+    <section>
+        <h2>Inscription</h2>
+        <form action="achat.html" method="get">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+
+            <label for="telephone">Téléphone:</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="Votre numéro de téléphone" required>
+
+            <label for="adresse">Adresse:</label>
+            <input type="text" id="adresse" name="adresse" placeholder="Votre adresse" required>
+
+            <button type="submit">S'inscrire</button>
+        </form>
+    </section>
+</body>
+</html>
